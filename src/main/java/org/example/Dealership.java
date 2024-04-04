@@ -1,4 +1,6 @@
 package org.example;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 public class Dealership {
     int numOfCars;
@@ -60,6 +62,19 @@ public class Dealership {
             }
             System.out.printf("Car: %s, Price: $%d, Mileage: %d miles per tank, Color: %s, Type of Vehicle: %s \n",arr[i].getBrand(),arr[i].getPrice(),arr[i].getMileage(),arr[i].getColor(),arr[i].getType());
         }
+    }
+
+    public List<Cars> browseByColor(String color){
+        List<Cars> results = new ArrayList<>();
+        //prints array to show all cars
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] == null){
+                continue;
+            } else if(arr[i].getColor().equals(color)){
+                results.add(arr[i]);
+            }
+        }
+        return results;
     }
 }
 

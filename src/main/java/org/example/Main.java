@@ -12,5 +12,9 @@ public class Main {
         sd.testDrive(car1);
 
         sd.browse();
+
+        for(Cars whiteCars: sd.browseByColor("Black")) {
+            System.out.println(whiteCars);
+        }
     }
 }

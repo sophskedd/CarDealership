@@ -74,6 +74,17 @@ public class Cars {
         gas -= miles;
     }
 
-
+    @Override
+    public String toString() {
+        return "Cars{" +
+                "price=" + price +
+                ", mileage=" + mileage +
+                ", color='" + color + '\'' +
+                ", brand='" + brand + '\'' +
+                ", type='" + type + '\'' +
+                ", totalMiles=" + totalMiles +
+                ", gas=" + gas +
+                '}';
+    }
 }
 

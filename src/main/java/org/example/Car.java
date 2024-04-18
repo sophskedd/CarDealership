@@ -1,7 +1,7 @@
 package org.example;
 
 
-public class Cars {
+public class Car {
     private int price = 50000;
     private int mileage = 0;//how many miles on a full tank
     private String color = "";
@@ -10,9 +10,9 @@ public class Cars {
     private int totalMiles = 0;
 
     double gas = 0;
-    Cars() {
+    Car() {
     }
-    Cars(String brand, int mileage, String color, String type, int price){
+    Car(String brand, int mileage, String color, String type, int price){
         this.price = price;
         this.brand = brand;
         this.mileage = mileage;
